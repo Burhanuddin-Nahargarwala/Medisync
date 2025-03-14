@@ -1,19 +1,19 @@
-appointments.py - Appointment Scheduling Feature
+# appointments.py - Appointment Scheduling Feature
 
 
 
 class Appointment:
-
-    def __init__(self, patient_name, doctor_name, date_time, location):
+    def __init__(self, patient_name, doctor_name, date_time, city, state):
         self.patient_name = patient_name
         self.doctor_name = doctor_name
-        self.date_time = date_tim
-	    self.location = location
+        self.date_time = date_time
+        self.city = city
+        self.state = state
+
 
 
 
     def schedule(self):
-
         return f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} on {self.date_time}"
 
 
